@@ -1,0 +1,28 @@
+{
+  "name": "linaria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc && node build.mjs",
+    "clean": "rm -rf build lib/ tsconfig.tsbuildinfo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "preact": "^10.15.1"
+  },
+  "devDependencies": {
+    "@linaria/core": "^4.2.10",
+    "@linaria/esbuild": "^4.2.11",
+    "@linaria/react": "^4.3.8",
+    "esbuild": "^0.17.19",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@linaria/babel-preset": "^4.4.5"
+  }
+}

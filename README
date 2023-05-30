@@ -1,0 +1,24 @@
+
+Found this error
+
+```
+[stage-1:async-resolve] ❌ cannot resolve ./style.js in /home/sebasjm/Work/linaria/src/SimpleButton.tsx: Error: Must specify "kind" when calling "resolve"
+```
+
+This patch fix it.
+Esbuild docs: https://esbuild.github.io/plugins/#on-resolve-arguments
+
+To reproduce:
+
+```
+# pnpm install
+# pnpm compile
+```
+
+To fix:
+
+```
+./patch.sh
+```
+
+Then try compile again
